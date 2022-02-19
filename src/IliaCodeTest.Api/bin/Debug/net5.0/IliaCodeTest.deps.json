@@ -454,7 +454,8 @@
       "IliaCodeTest.UseCases/1.0.0": {
         "dependencies": {
           "IliaCodeTest.Borders": "1.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Serilog": "2.10.0"
         },
         "runtime": {
           "IliaCodeTest.UseCases.dll": {}

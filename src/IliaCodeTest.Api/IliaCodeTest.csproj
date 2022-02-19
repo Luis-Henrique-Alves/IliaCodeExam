@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IliaCodeTest.UseCases\IliaCodeTest.UseCases.csproj" />
     <ProjectReference Include="..\IliaCodeTest.Borders\IliaCodeTest.Borders.csproj" />
+    <ProjectReference Include="..\IliaCodeTestUseCases\IliaCodeTest.UseCases.csproj" />
   </ItemGroup>
 
 </Project>
