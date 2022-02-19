@@ -1,0 +1,15 @@
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.csproj.AssemblyReference.cache
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.AssemblyInfoInputs.cache
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.AssemblyInfo.cs
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\bin\Debug\net5.0\IliaCodeTest.UseCases.deps.json
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\bin\Debug\net5.0\IliaCodeTest.UseCases.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\bin\Debug\net5.0\ref\IliaCodeTest.UseCases.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\bin\Debug\net5.0\IliaCodeTest.UseCases.pdb
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\bin\Debug\net5.0\IliaCodeTest.Borders.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\bin\Debug\net5.0\IliaCodeTest.Borders.pdb
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.csproj.CopyComplete
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\ref\IliaCodeTest.UseCases.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTestUseCases\obj\Debug\net5.0\IliaCodeTest.UseCases.pdb
