@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = IliaCodeTest.Borders
-build_property.ProjectDir = C:\Users\luish\source\repos\IliaCodeTest\src\IliaCodeTest.Api\
+build_property.ProjectDir = C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\
