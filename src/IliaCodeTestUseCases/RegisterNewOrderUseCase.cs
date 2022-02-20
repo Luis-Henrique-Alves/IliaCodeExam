@@ -1,4 +1,5 @@
 ﻿using IliaCodeTest.Borders.Dtos;
+using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
 using Microsoft.Extensions.Logging;
@@ -10,11 +11,14 @@ namespace IliaCodeTest.UseCases
     public class RegisterNewOrderUseCase : IRegisterNewOrderUseCase
     {
         private readonly ILogger<RegisterNewOrderUseCase> _logger;
+        private readonly IOrderRepository _orderRepository;
 
         public RegisterNewOrderUseCase(
-            ILogger<RegisterNewOrderUseCase> logger
+         IOrderRepository orderRepository,
+        ILogger<RegisterNewOrderUseCase> logger
         )
         {
+            _orderRepository = orderRepository;
             _logger = logger;
 
         }
@@ -26,6 +30,7 @@ namespace IliaCodeTest.UseCases
 
             try
             {
+                await _orderRepository.RegisterNewOrderRequestAsync(registerNewOrderUseCase);
                 return response.SetResult(true);
             }
 

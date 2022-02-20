@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Dapper.SqlBuilder" Version="2.0.78" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
     <PackageReference Include="Serilog" Version="2.10.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
@@ -15,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IliaCodeTest.Borders\IliaCodeTest.Borders.csproj" />
+    <ProjectReference Include="..\IliaCodeTest.Repository\IliaCodeTest.Repository.csproj" />
     <ProjectReference Include="..\IliaCodeTestUseCases\IliaCodeTest.UseCases.csproj" />
   </ItemGroup>
 

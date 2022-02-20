@@ -1,4 +1,4 @@
-﻿using IliaTestExam.Borders.Entities;
+﻿using IliaTestExam.Borders.Dtos;
 using System.Collections.Generic;
 
 namespace IliaCodeTest.Borders.Dtos
@@ -8,7 +8,12 @@ namespace IliaCodeTest.Borders.Dtos
         public string Name { get; set; }
         public string Email { get; set; }
         public string MainDocument { get; set; }
-        public ICollection<Order> orders { get; set; }
+        public List<OrderDTO> orders { get; set; }
+
+        public GetConsumerWithOrdersResponse()
+        {
+            orders = new List<OrderDTO>();
+        }
 
     }
 }

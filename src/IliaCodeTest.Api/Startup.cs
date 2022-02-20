@@ -28,6 +28,7 @@ namespace IliaCodeExam
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureApi();
+            services.ConfigureRepository();
             services.AddControllers();
             services.ConfigureUseCase();
             services.AddSwaggerGen(c =>

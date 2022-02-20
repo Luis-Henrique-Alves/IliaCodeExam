@@ -8,12 +8,33 @@
     ".NETCoreApp,Version=v5.0": {
       "IliaCodeTest.UseCases/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.123",
+          "Dapper.SqlBuilder": "2.0.78",
           "IliaCodeTest.Borders": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Serilog": "2.10.0"
         },
         "runtime": {
           "IliaCodeTest.UseCases.dll": {}
+        }
+      },
+      "Dapper/2.0.123": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.123.33578"
+          }
+        }
+      },
+      "Dapper.SqlBuilder/2.0.78": {
+        "dependencies": {
+          "Dapper": "2.0.123"
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.SqlBuilder.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.78.45418"
+          }
         }
       },
       "FluentValidation/10.3.6": {
@@ -56,6 +77,8 @@
       "System.Memory/4.5.4": {},
       "IliaCodeTest.Borders/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.123",
+          "Dapper.SqlBuilder": "2.0.78",
           "FluentValidation": "10.3.6",
           "Newtonsoft.Json": "13.0.1",
           "Serilog": "2.10.0"
@@ -71,6 +94,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Dapper/2.0.123": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "path": "dapper/2.0.123",
+      "hashPath": "dapper.2.0.123.nupkg.sha512"
+    },
+    "Dapper.SqlBuilder/2.0.78": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-07LHm+/YOLyFieN51mjwrrVPKX3q0k7RxG+8zi/5MKjy7mWid/DRlRFNgvcCffEcjLjkbgEdITHkKTKSxSmPnw==",
+      "path": "dapper.sqlbuilder/2.0.78",
+      "hashPath": "dapper.sqlbuilder.2.0.78.nupkg.sha512"
     },
     "FluentValidation/10.3.6": {
       "type": "package",

@@ -11,7 +11,7 @@ namespace IliaTestExam.Borders.Entities
         public string Description { get; set; }
         public OrderStatus Status { get; set; }
         public Customer Customer { get; set; }
-        
+
 
     }
 }
