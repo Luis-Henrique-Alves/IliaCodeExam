@@ -33,11 +33,11 @@
 		c.[name],
 		c.[email],
 		c.[main-document] AS [MainDocument],
-		o.[pk-order],
+		o.[pk-order] AS [Id],
 		o.[description],
 		o.[price],
-		o.[created-at],
-		o.[order-status]
+		o.[created-at] AS [CreatedAt],
+		o.[order-status] [Status]
 		from [tb_customer] c
 		left JOIN[tb_order] o on c.[pk-customer] = o.[fk-consumer]
 		ORDER BY [pk-customer] desc

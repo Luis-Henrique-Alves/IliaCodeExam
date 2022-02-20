@@ -2,14 +2,14 @@ C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Repository.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\ref\IliaCodeTest.Repository.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Repository.pdb
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Borders.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Borders.pdb
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.csproj.AssemblyReference.cache
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.AssemblyInfoInputs.cache
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.AssemblyInfo.cs
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.csproj.CoreCompileInputs.cache
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.csproj.CopyComplete
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\ref\IliaCodeTest.Repository.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.pdb
-C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Borders.dll
-C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Borders.pdb
-C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.csproj.CopyComplete

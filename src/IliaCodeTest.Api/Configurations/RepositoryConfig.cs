@@ -13,6 +13,7 @@ namespace IliaCodeTest.Configurations
         {
             services.AddTransient<IIliaCodeTestDbContext, IliaCodeTestDbContext>();
             services.AddTransient<IConsumerRepository, ConsumerRepository>();
+            services.AddTransient<IOrderRepository, OrderRepository>();
         }
 
 

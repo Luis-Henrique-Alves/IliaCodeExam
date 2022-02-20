@@ -10,6 +10,7 @@ using IliaCodeTest.Repository.Queries;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Models.Pagination;
 using IliaTestExam.Borders.Entities;
+using IliaTestExam.Borders.Dtos;
 
 namespace IliaCodeTest.Repository.Repositories
 {
@@ -64,6 +65,7 @@ namespace IliaCodeTest.Repository.Repositories
         public async Task<PagedResult<GetConsumerWithOrdersResponse>> GetConsumersWithOrdersAsync(GetConsumerWithOrdersRequest request)
         {
             var result = new PagedResult<GetConsumerWithOrdersResponse>();
+            
 
             var parameter = new
             {
@@ -75,22 +77,32 @@ namespace IliaCodeTest.Repository.Repositories
 
 
             };
-            //await using var connection = _dbContext.OpenConnection();
-            //var query = await connection
-            //    .QueryAsync<GetConsumerWithOrdersResponse, Order>(
-            //    sql: string.Format(ConsumerRepositoryQueries.GetConsumersWithOrders),
-            //    map:(consumer,order) =>
-            //    {
-            //        if (order != default)
-            //            consumer.orders.Add(order);
+            await using var connection = _dbContext.OpenConnection();
+            var query = await connection
+                .QueryAsync<GetConsumerWithOrdersResponse, OrderDTO, GetConsumerWithOrdersResponse>(
+                sql: string.Format(ConsumerRepositoryQueries.GetConsumersWithOrders),
+                map: (consumer, order) =>
+                 {
+                     if (order != default)
+                         consumer.orders.Add(order);
 
-            //        return consumer;
-            //    },
-            //    splitOn: "pk-order,Id",
-            //    param: parameter);
-           
-            //result.Data = query;
-            //result.Total = query.Count();
+                     return consumer;
+                 },
+                splitOn: "Id",
+                param: parameter);
+
+            var response = query.GroupBy(x => x.MainDocument).Select(group =>
+            {
+                var combinedConsumer = group.First();
+
+                combinedConsumer.orders = query.Where(x => x.MainDocument == combinedConsumer.MainDocument).SelectMany(x => x.orders).GroupBy(x => x.Id).Select(g => g.First()).ToList();
+
+                return combinedConsumer;
+            });
+
+            result.Data = response;
+
+            result.Total = response.Count();
 
 
             return result;
