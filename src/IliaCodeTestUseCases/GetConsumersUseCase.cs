@@ -1,5 +1,6 @@
 ﻿using IliaCodeTest.Borders.Dtos;
 using IliaCodeTest.Borders.Models.Pagination;
+using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
 using Microsoft.Extensions.Logging;
@@ -11,11 +12,14 @@ namespace IliaCodeTest.UseCases
     public class GetConsumersUseCase : IGetConsumersUseCase
     {
         private readonly ILogger<GetConsumersUseCase> _logger;
+        private readonly IConsumerRepository _consumerRepository;
 
         public GetConsumersUseCase(
-            ILogger<GetConsumersUseCase> logger
+            ILogger<GetConsumersUseCase> logger,
+            IConsumerRepository consumerRepository
         )
         {
+            _consumerRepository = consumerRepository;
             _logger = logger;
 
         }
@@ -27,7 +31,7 @@ namespace IliaCodeTest.UseCases
 
             try
             {
-                return response.SetResult(new PagedResult<GetConsumerResponse>());
+                return response.SetResult( await _consumerRepository.GetConsumersAsync(getConsumerRequest));
             }
 
             catch (Exception ex)

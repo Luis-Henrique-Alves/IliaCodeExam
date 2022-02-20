@@ -1,4 +1,5 @@
 ﻿using IliaCodeTest.Borders.Dtos;
+using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
 using Microsoft.Extensions.Logging;
@@ -10,11 +11,14 @@ namespace IliaCodeTest.UseCases
     public class AddConsumerUseCase : IAddConsumerUseCase
     {
         private readonly ILogger<AddConsumerUseCase> _logger;
+        private readonly IConsumerRepository _consumerRepository;
 
-        public AddConsumerUseCase(
+        public AddConsumerUseCase(IConsumerRepository consumerRepository,
+
             ILogger<AddConsumerUseCase> logger
         )
         {
+            _consumerRepository = consumerRepository;
             _logger = logger;
 
         }
@@ -26,6 +30,7 @@ namespace IliaCodeTest.UseCases
 
             try
             {
+                await _consumerRepository.AddConsumerAsync(addConsumerRequest);
                 return response.SetResult(true);
             }
 

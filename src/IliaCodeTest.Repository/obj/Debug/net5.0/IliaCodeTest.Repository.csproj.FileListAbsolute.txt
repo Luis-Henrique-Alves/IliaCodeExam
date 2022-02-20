@@ -10,3 +10,6 @@ C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\ref\IliaCodeTest.Repository.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.pdb
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Borders.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\bin\Debug\net5.0\IliaCodeTest.Borders.pdb
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Repository\obj\Debug\net5.0\IliaCodeTest.Repository.csproj.CopyComplete
