@@ -22,3 +22,5 @@ C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Borders\obj\Debug\net5.0\Il
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Borders\obj\Debug\net5.0\IliaCodeTest.Borders.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Borders\obj\Debug\net5.0\ref\IliaCodeTest.Borders.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Borders\obj\Debug\net5.0\IliaCodeTest.Borders.pdb
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Borders\obj\Debug\net5.0\IliaCodeTest.Borders.Properties.Resources.resources
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Borders\obj\Debug\net5.0\IliaCodeTest.Borders.csproj.GenerateResource.cache

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1MXrhTtus0sAaxq2LrJ0ebvbl1rDYTW9pIOL8VFKsIq+yysFA9cUxeLxBfdDyEDHJIeWmzciwEtzCExM/8wzGQ==",
+  "dgSpecHash": "B/7ZwbUGvcmtGxsWRLLTpcI9rP/Yp7OuXH0Dto4XR+X6mKNWyHHZCmf+BCkWU9iVBAzt17IYmep31lx6U2z5Fg==",
   "success": true,
   "projectFilePath": "C:\\Users\\luish\\Desktop\\IliaCodeTest\\src\\IliaCodeTest.Api\\IliaCodeTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luish\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\dapper.sqlbuilder\\2.0.78\\dapper.sqlbuilder.2.0.78.nupkg.sha512",
+    "C:\\Users\\luish\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\luish\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

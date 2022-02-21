@@ -4,6 +4,8 @@ using IliaCodeTest.Borders.UseCases;
 using IliaCodeTest.Borders.Dtos;
 using System.Threading.Tasks;
 using IliaCodeTest.Models;
+using System.Net;
+using IliaCodeTest.Borders.Shared;
 
 namespace IliaCodeExam.Controllers
 {
@@ -27,6 +29,8 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("registerNewOrder")]
         public async Task<IActionResult> RegisterNewOrder([FromBody] RegisterNewOrderRequest request)
         {
@@ -34,6 +38,8 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("getOrdersByConsumer")]
         public async Task<IActionResult> GetOrdersByConsumerUseCase([FromQuery] GetOrdersByConsumerRequest request)
         {
@@ -41,6 +47,8 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("updateOrderStatus")]
         public async Task<IActionResult> UpdateOrderStatus([FromQuery] UpdateOrderStatusRequest request)
         {

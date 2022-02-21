@@ -37,8 +37,8 @@ namespace IliaCodeTest.UseCases
             catch (Exception ex)
             {
 
-                _logger.LogError(ex, "teste");
-                return response.SetInternalServerError("error");
+                _logger.LogError(ex, "Erro Inesperado ao Atualizar Status de Pedido");
+                return response.SetInternalServerError("Erro Inesperado ao Atualizar Status de Pedido");
 
             }
 

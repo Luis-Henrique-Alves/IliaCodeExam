@@ -23,6 +23,18 @@
           "lib/net5.0/Dapper.SqlBuilder.dll": {}
         }
       },
+      "Extensions.FluentValidation.Br/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.0.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.Extensions.Br.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.Extensions.Br.dll": {}
+        }
+      },
       "FluentValidation/10.3.6": {
         "type": "package",
         "compile": {
@@ -418,6 +430,18 @@
         "lib/net461/Dapper.SqlBuilder.dll",
         "lib/net5.0/Dapper.SqlBuilder.dll",
         "lib/netstandard2.0/Dapper.SqlBuilder.dll"
+      ]
+    },
+    "Extensions.FluentValidation.Br/1.0.2": {
+      "sha512": "ZVoXpIFkUhufHoO3/MkdIMZU0+8Mjy1K9TNd0zroT/J92SqU8V/ryZqVn4Mdbeq2aAC5yrtAhowg8Vd+FjSCSw==",
+      "type": "package",
+      "path": "extensions.fluentvalidation.br/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
+        "extensions.fluentvalidation.br.nuspec",
+        "lib/netstandard2.0/FluentValidation.Extensions.Br.dll"
       ]
     },
     "FluentValidation/10.3.6": {
@@ -1186,6 +1210,7 @@
     "net5.0": [
       "Dapper >= 2.0.123",
       "Dapper.SqlBuilder >= 2.0.78",
+      "Extensions.FluentValidation.Br >= 1.0.2",
       "IliaCodeTest.Borders >= 1.0.0",
       "IliaCodeTest.Repository >= 1.0.0",
       "IliaCodeTest.UseCases >= 1.0.0",
@@ -1250,6 +1275,10 @@
           "Dapper.SqlBuilder": {
             "target": "Package",
             "version": "[2.0.78, )"
+          },
+          "Extensions.FluentValidation.Br": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",

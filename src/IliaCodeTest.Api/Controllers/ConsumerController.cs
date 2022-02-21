@@ -4,6 +4,8 @@ using IliaCodeTest.Borders.UseCases;
 using IliaCodeTest.Borders.Dtos;
 using System.Threading.Tasks;
 using IliaCodeTest.Models;
+using System.Net;
+using IliaCodeTest.Borders.Shared;
 
 namespace IliaCodeExam.Controllers
 {
@@ -27,6 +29,8 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType((int) HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("addConsumer")]
         public async Task<IActionResult> AddConsumer([FromBody]AddConsumerRequest request)
         {
@@ -34,6 +38,8 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("getConsumers")]
         public async Task<IActionResult> GetConsumers([FromQuery] GetConsumerRequest request)
         {
@@ -41,7 +47,10 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("getConsumersWithOrders")]
+
         public async Task<IActionResult> GetConsumersWithOrders([FromQuery] GetConsumerWithOrdersRequest request)
         {
             return _actionResultConverter.Convert(await _getConsumerWithOrdersUseCase.Execute(request));
