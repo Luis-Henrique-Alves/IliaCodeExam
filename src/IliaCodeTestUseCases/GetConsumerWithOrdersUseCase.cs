@@ -38,8 +38,8 @@ namespace IliaCodeTest.UseCases
             catch (Exception ex)
             {
 
-                _logger.LogError(ex, "teste");
-                return response.SetInternalServerError("error");
+                _logger.LogError(ex, "Erro Inesperado Ao Obter Clientes");
+                return response.SetInternalServerError("Erro Inesperado Ao Obter Clientes");
 
             }
 

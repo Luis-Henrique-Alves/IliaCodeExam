@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace IliaCodeTest.Borders.Shared
 {
     public class UseCaseResponse<T> : IResponse
@@ -53,22 +55,6 @@ namespace IliaCodeTest.Borders.Shared
 
             return ErrorKind;
         }
-
-        //public UseCaseResponse<T> SetRequestValidationError(ValidationException ex)
-        //{
-        //    return SetRequestValidationError("Validation exception", ex.Errors.Select(error => new ErrorMessage(error.ErrorCode, error.ErrorMessage)));
-        //}
-
-        //public UseCaseResponse<T> SetRequestValidationError(string errorMessage, IEnumerable<ErrorMessage> errors = null)
-        //{
-        //    return SetStatus(UseCaseResponseKind.UnprocessableEntity, errorMessage, errors);
-        //}
-
-        //public UseCaseResponse<T> SetRequestValidationError(IEnumerable<ValidationFailure> errors)
-        //{
-        //    return SetRequestValidationError(Resources.RequestValidationError,
-        //        errors.Select(error => new ErrorMessage(error.ErrorCode, error.ErrorMessage)));
-        //}
 
         private UseCaseResponse<T> SetStatus(UseCaseResponseKind status, string errorMessage = null, IEnumerable<ErrorMessage> errors = null)
         {

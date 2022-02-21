@@ -114,3 +114,4 @@ C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\IliaCo
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\ref\IliaCodeTest.dll
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\IliaCodeTest.pdb
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\IliaCodeTest.genruntimeconfig.cache
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\bin\Debug\net5.0\FluentValidation.Extensions.Br.dll

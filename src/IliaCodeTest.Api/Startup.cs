@@ -28,6 +28,7 @@ namespace IliaCodeExam
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureApi();
+            services.ConfigureValidator();
             services.ConfigureRepository();
             services.AddControllers();
             services.ConfigureUseCase();
