@@ -9,8 +9,8 @@ using Dapper;
 using IliaCodeTest.Repository.Queries;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Models.Pagination;
-using IliaTestExam.Borders.Entities;
-using IliaTestExam.Borders.Dtos;
+using IliaCodeTest.Borders.Entities;
+using IliaCodeTest.Borders.Dtos;
 
 namespace IliaCodeTest.Repository.Repositories
 {
@@ -35,6 +35,20 @@ namespace IliaCodeTest.Repository.Repositories
             await using var connection = _dbContext.OpenConnection();
             await connection.ExecuteAsync(ConsumerRepositoryQueries.AddConsumerQuery, parameter);
   
+        }
+
+        public async Task<bool> CheckIfExist(string Email, string CPF)
+        {
+            var parameter = new
+            {
+                Email = Email,
+                MainDocument = CPF
+            };
+
+            await using var connection = _dbContext.OpenConnection();
+
+            return await connection.QueryFirstOrDefaultAsync<Customer>(ConsumerRepositoryQueries.CheckAlreadyExists, parameter).ContinueWith(x => x.Result != null);
+             
         }
 
         public async Task<PagedResult<GetConsumerResponse>> GetConsumersAsync(GetConsumerRequest request)

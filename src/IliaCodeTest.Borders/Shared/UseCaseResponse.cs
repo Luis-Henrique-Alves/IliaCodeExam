@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using FluentValidation.Results;
+using IliaCodeTest.Borders.Properties;
 
 namespace IliaCodeTest.Borders.Shared
 {
@@ -64,5 +67,17 @@ namespace IliaCodeTest.Borders.Shared
 
             return this;
         }
+
+        public UseCaseResponse<T> SetRequestValidationError(string errorMessage, IEnumerable<ErrorMessage> errors = null)
+        {
+            return SetStatus(UseCaseResponseKind.UnprocessableEntity, errorMessage, errors);
+        }
+
+        public UseCaseResponse<T> SetRequestValidationError(IEnumerable<ValidationFailure> errors)
+        {
+            return SetRequestValidationError("Validation Error",
+                errors.Select(error => new ErrorMessage(error.ErrorCode, error.ErrorMessage)));
+        }
+
     }
 }

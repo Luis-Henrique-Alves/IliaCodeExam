@@ -1,15 +1,15 @@
-﻿using IliaTestExam.Borders.Enums;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace IliaCodeTest.Borders.Dtos
 {
-    public class UpdateOrderStatusRequest
+    public class RegisterNewOrderRequest
     {
-     [Required]
-     public Guid IdOrder { get; set; }
-
-    [Required]
-     public OrderStatus orderStatus { get; set; }
+        [Required]
+        public decimal Price { get; set; }
+        [Required]
+        public string Description { get; set; }
+        [Required]
+        public Guid IdCostumer { get; set; }
     }
 }

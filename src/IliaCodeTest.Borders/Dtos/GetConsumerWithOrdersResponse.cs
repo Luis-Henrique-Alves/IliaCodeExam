@@ -1,4 +1,4 @@
-﻿using IliaTestExam.Borders.Dtos;
+﻿using IliaCodeTest.Borders.Dtos;
 using System.Collections.Generic;
 
 namespace IliaCodeTest.Borders.Dtos

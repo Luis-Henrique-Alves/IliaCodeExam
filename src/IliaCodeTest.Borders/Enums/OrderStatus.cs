@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace IliaTestExam.Borders.Enums
+namespace IliaCodeTest.Borders.Enums
 {
     public enum OrderStatus
     {

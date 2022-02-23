@@ -1,7 +1,7 @@
-﻿using IliaTestExam.Borders.Enums;
+﻿using IliaCodeTest.Borders.Enums;
 using System;
 
-namespace IliaTestExam.Borders.Dtos
+namespace IliaCodeTest.Borders.Dtos
 {
     public class OrderDTO
     {

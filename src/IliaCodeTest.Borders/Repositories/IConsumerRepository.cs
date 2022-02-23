@@ -9,6 +9,6 @@ namespace IliaCodeTest.Borders.Repositories
         Task AddConsumerAsync(AddConsumerRequest request);
         Task<PagedResult<GetConsumerResponse>> GetConsumersAsync(GetConsumerRequest request);
         Task<PagedResult<GetConsumerWithOrdersResponse>> GetConsumersWithOrdersAsync(GetConsumerWithOrdersRequest request);
-
+        Task<bool> CheckIfExist(string Email, string CPF);
     }
 }

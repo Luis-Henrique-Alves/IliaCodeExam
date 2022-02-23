@@ -29,10 +29,10 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("registerNewOrder")]
-        public async Task<IActionResult> RegisterNewOrder([FromBody] RegisterNewOrderRequest request)
+        public async Task<IActionResult> RegisterNewOrder([FromQuery] RegisterNewOrderRequest request)
         {
             return _actionResultConverter.Convert(await _registerNewOrderUseCase.Execute(request));
         }

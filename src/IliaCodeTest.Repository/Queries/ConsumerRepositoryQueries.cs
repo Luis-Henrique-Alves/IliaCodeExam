@@ -44,6 +44,11 @@
 		OFFSET (@PageNumber-1)*@PageSize ROWS
 		FETCH NEXT @PageSize ROWS ONLY";
 
+		public static string CheckAlreadyExists = @"SELECT c.[pk-customer] AS[PKCosumer],
+		 c.[name],
+		c.[email],
+		c.[main-document] AS[MainDocument] from[tb_customer] c
+		WHERE c.[email] = @Email or c.[main-document] = @MainDocument";
 	}
 }
 

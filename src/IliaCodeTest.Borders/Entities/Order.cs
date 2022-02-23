@@ -1,7 +1,7 @@
-﻿using IliaTestExam.Borders.Enums;
+﻿using IliaCodeTest.Borders.Enums;
 using System;
 
-namespace IliaTestExam.Borders.Entities
+namespace IliaCodeTest.Borders.Entities
 {
     public class Order
     {

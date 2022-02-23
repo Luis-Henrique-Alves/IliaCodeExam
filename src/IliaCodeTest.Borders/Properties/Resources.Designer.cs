@@ -22,14 +22,14 @@ namespace IliaCodeTest.Borders.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        public Resources() {
         }
         
         /// <summary>
@@ -59,38 +59,101 @@ namespace IliaCodeTest.Borders.Properties {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Erro inesperado ao Adicionar consumidor.
+        ///   Looks up a localized string similar to Erro inesperado ao Adicionar consumidor..
         /// </summary>
-        internal static string UnexpectedErrorAddConsumer {
+        public static string UnexpectedErrorAddConsumer {
             get {
                 return ResourceManager.GetString("UnexpectedErrorAddConsumer", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to O Email deve ser um Email Válido.
+        ///   Looks up a localized string similar to Erro inesperado ao Obter Consumidores..
         /// </summary>
-        internal static string ValidateEmailIsValid {
+        public static string UnexpectedErrorGetConsumer {
+            get {
+                return ResourceManager.GetString("UnexpectedErrorGetConsumer", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Erro Inesperado ao Obter Pedidos..
+        /// </summary>
+        public static string UnexpectedErrorGetOrders {
+            get {
+                return ResourceManager.GetString("UnexpectedErrorGetOrders", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Erro Inesperado ao Registrar Novo Pedido..
+        /// </summary>
+        public static string UnexpectedErrorRegisterNewOrders {
+            get {
+                return ResourceManager.GetString("UnexpectedErrorRegisterNewOrders", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Erro inesperado ao Atualizar Status Pedido. .
+        /// </summary>
+        public static string UnexpectedErrorUpdateOrderStatus {
+            get {
+                return ResourceManager.GetString("UnexpectedErrorUpdateOrderStatus", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to O CPF deve ser informado..
+        /// </summary>
+        public static string ValidateCPFMustBeInformed {
+            get {
+                return ResourceManager.GetString("ValidateCPFMustBeInformed", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to O Email deve ser um Email Válido..
+        /// </summary>
+        public static string ValidateEmailIsValid {
             get {
                 return ResourceManager.GetString("ValidateEmailIsValid", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to O Cpf deve ser Válido.
+        ///   Looks up a localized string similar to O Email deve ser informado..
         /// </summary>
-        internal static string ValidateMainDocumentIsValid {
+        public static string ValidateEmailMustBeInformed {
+            get {
+                return ResourceManager.GetString("ValidateEmailMustBeInformed", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to O Cpf deve ser Válido..
+        /// </summary>
+        public static string ValidateMainDocumentIsValid {
             get {
                 return ResourceManager.GetString("ValidateMainDocumentIsValid", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to O Email e/ou CPF apresentado já foram cadastrados na base, favor verificar..
+        /// </summary>
+        public static string ValidateUniqueCPFandEmail {
+            get {
+                return ResourceManager.GetString("ValidateUniqueCPFandEmail", resourceCulture);
+            }
+        }
         
         /// <summary>
-        ///   Looks up a localized string similar to O Nome de Usuário deve ser informado.
+        ///   Looks up a localized string similar to O Nome de Usuário deve ser informado..
         /// </summary>
-        internal static string ValidateUserNameMustBeInformed {
+        public static string ValidateUserNameMustBeInformed {
             get {
                 return ResourceManager.GetString("ValidateUserNameMustBeInformed", resourceCulture);
             }

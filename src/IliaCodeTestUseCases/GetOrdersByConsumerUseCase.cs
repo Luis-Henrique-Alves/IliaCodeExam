@@ -1,9 +1,10 @@
 ﻿using IliaCodeTest.Borders.Dtos;
 using IliaCodeTest.Borders.Models.Pagination;
+using IliaCodeTest.Borders.Properties;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
-using IliaTestExam.Borders.Dtos;
+using IliaCodeTest.Borders.Dtos;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
@@ -38,8 +39,8 @@ namespace IliaCodeTest.UseCases
             catch (Exception ex)
             {
 
-                _logger.LogError(ex, "Erro Inesperado Ao Obter Ordens po Cliente");
-                return response.SetInternalServerError("Erro Inesperado Ao Obter Ordens po Cliente");
+                _logger.LogError(ex, Resources.UnexpectedErrorGetOrders);
+                return response.SetInternalServerError(Resources.UnexpectedErrorGetOrders);
 
             }
 

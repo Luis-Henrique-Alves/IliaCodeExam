@@ -1,9 +1,10 @@
-﻿using IliaTestExam.Borders.Entities;
-using IliaTestExam.Borders.Enums;
+﻿using IliaCodeTest.Test.Utils;
+using IliaCodeTest.Borders.Entities;
+using IliaCodeTest.Borders.Enums;
 using System;
 using Xunit;
 
-namespace IliaTestExam.Test.Entities
+namespace IliaCodeTest.Test.Entities
 {
     public class OrderTest
     {
@@ -13,11 +14,12 @@ namespace IliaTestExam.Test.Entities
         public void Shout_Set_Propeties()
         {
             //arrange
+            var faker = FakerPtBr.CreateFaker();
             var Id = Guid.NewGuid();
-            var Description = "Teste";
-            var Status = OrderStatus.Send;
+            var Description = faker.Random.String();
+            var Status = faker.PickRandom<OrderStatus>();
             var Customer = new Customer();
-            var Price =10;
+            var Price = faker.Finance.Random.Decimal();
             var CreatedAt = System.DateTime.Now;
 
         //Act

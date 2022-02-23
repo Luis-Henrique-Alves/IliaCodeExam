@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IliaTestExam.Borders.Entities
+namespace IliaCodeTest.Borders.Entities
 {
     public class Customer
     {

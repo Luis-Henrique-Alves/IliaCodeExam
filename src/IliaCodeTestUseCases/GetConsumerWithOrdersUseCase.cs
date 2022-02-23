@@ -1,5 +1,6 @@
 ﻿using IliaCodeTest.Borders.Dtos;
 using IliaCodeTest.Borders.Models.Pagination;
+using IliaCodeTest.Borders.Properties;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
@@ -38,8 +39,8 @@ namespace IliaCodeTest.UseCases
             catch (Exception ex)
             {
 
-                _logger.LogError(ex, "Erro Inesperado Ao Obter Clientes");
-                return response.SetInternalServerError("Erro Inesperado Ao Obter Clientes");
+                _logger.LogError(ex, Resources.ValidateUserNameMustBeInformed);
+                return response.SetInternalServerError(Resources.ValidateUserNameMustBeInformed);
 
             }
 

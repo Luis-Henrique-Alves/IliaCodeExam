@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using IliaCodeTest.Borders.Dtos;
+using IliaCodeTest.Borders.Properties;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
@@ -27,7 +28,7 @@ namespace IliaCodeTest.UseCases
         }
 
         public async Task<UseCaseResponse<bool>> Execute (AddConsumerRequest addConsumerRequest)
-        {
+        {   
 
             var response = new UseCaseResponse<bool>();
 
@@ -35,16 +36,28 @@ namespace IliaCodeTest.UseCases
             {
 
                 await _validator.ValidateAndThrowAsync(addConsumerRequest);
+
+                if (await _consumerRepository.CheckIfExist(addConsumerRequest.Email, addConsumerRequest.MainDocument))
+                {
+                    return response.SetBadRequest(Resources.ValidateUniqueCPFandEmail);
+                }
+
+
                 await _consumerRepository.AddConsumerAsync(addConsumerRequest);
                 return response.SetResult(true);
             }
 
+            catch (ValidationException ex)
+            {   
+                return response.SetRequestValidationError(ex.Errors);
+
+            }
 
             catch (Exception ex)
             {
 
-                _logger.LogError(ex, "Erro Inesperado Ao Cadastrar Usuário");
-                return response.SetInternalServerError("Erro Inesperado Ao Cadastrar Usuário");
+                _logger.LogError(ex, Resources.UnexpectedErrorAddConsumer);
+                return response.SetInternalServerError(Resources.UnexpectedErrorAddConsumer);
 
             }
 

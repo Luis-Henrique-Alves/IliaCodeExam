@@ -118,15 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnexpectedErrorAddConsumer" xml:space="preserve">
-    <value>Erro inesperado ao Adicionar consumidor</value>
+    <value>Erro inesperado ao Adicionar consumidor.</value>
+  </data>
+  <data name="UnexpectedErrorGetConsumer" xml:space="preserve">
+    <value>Erro inesperado ao Obter Consumidores.</value>
+  </data>
+  <data name="UnexpectedErrorGetOrders" xml:space="preserve">
+    <value>Erro Inesperado ao Obter Pedidos.</value>
+  </data>
+  <data name="UnexpectedErrorRegisterNewOrders" xml:space="preserve">
+    <value>Erro Inesperado ao Registrar Novo Pedido.</value>
+  </data>
+  <data name="UnexpectedErrorUpdateOrderStatus" xml:space="preserve">
+    <value>Erro inesperado ao Atualizar Status Pedido. </value>
+  </data>
+  <data name="ValidateCPFMustBeInformed" xml:space="preserve">
+    <value>O CPF deve ser informado.</value>
   </data>
   <data name="ValidateEmailIsValid" xml:space="preserve">
-    <value>O Email deve ser um Email Válido</value>
+    <value>O Email deve ser um Email Válido.</value>
+  </data>
+  <data name="ValidateEmailMustBeInformed" xml:space="preserve">
+    <value>O Email deve ser informado.</value>
   </data>
   <data name="ValidateMainDocumentIsValid" xml:space="preserve">
-    <value>O Cpf deve ser Válido</value>
+    <value>O Cpf deve ser Válido.</value>
+  </data>
+  <data name="ValidateUniqueCPFandEmail" xml:space="preserve">
+    <value>O Email e/ou CPF apresentado já foram cadastrados na base, favor verificar.</value>
   </data>
   <data name="ValidateUserNameMustBeInformed" xml:space="preserve">
-    <value>O Nome de Usuário deve ser informado</value>
+    <value>O Nome de Usuário deve ser informado.</value>
   </data>
 </root>

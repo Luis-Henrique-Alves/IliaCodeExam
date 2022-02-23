@@ -115,3 +115,7 @@ C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\ref\Il
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\IliaCodeTest.pdb
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\obj\Debug\net5.0\IliaCodeTest.genruntimeconfig.cache
 C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\bin\Debug\net5.0\FluentValidation.Extensions.Br.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\bin\Debug\net5.0\FluentAssertions.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\luish\Desktop\IliaCodeTest\src\IliaCodeTest.Api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

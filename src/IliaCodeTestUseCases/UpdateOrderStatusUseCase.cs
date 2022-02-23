@@ -1,4 +1,5 @@
 ﻿using IliaCodeTest.Borders.Dtos;
+using IliaCodeTest.Borders.Properties;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Shared;
 using IliaCodeTest.Borders.UseCases;
@@ -37,8 +38,8 @@ namespace IliaCodeTest.UseCases
             catch (Exception ex)
             {
 
-                _logger.LogError(ex, "Erro Inesperado ao Atualizar Status de Pedido");
-                return response.SetInternalServerError("Erro Inesperado ao Atualizar Status de Pedido");
+                _logger.LogError(ex, Resources.UnexpectedErrorUpdateOrderStatus);
+                return response.SetInternalServerError(Resources.UnexpectedErrorUpdateOrderStatus);
 
             }
 
