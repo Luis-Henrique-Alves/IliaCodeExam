@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IliaCodeTest.UseCases", "sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FDEE96CA-A005-4F0F-A1EF-D3A47B5C93EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IliaCodeTest.Test", "IliaCodeTest.Test\IliaCodeTest.Test.csproj", "{2A38F39B-41AC-4354-971E-F311CE423AC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IliaCodeTest.Test", "IliaCodeTest.Test\IliaCodeTest.Test.csproj", "{2A38F39B-41AC-4354-971E-F311CE423AC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

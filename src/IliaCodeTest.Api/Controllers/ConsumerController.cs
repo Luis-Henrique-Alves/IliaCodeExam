@@ -29,7 +29,7 @@ namespace IliaCodeExam.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType((int) HttpStatusCode.Accepted)]
+        [ProducesResponseType((int) HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorMessage[]))]
         [Route("addConsumer")]
         public async Task<IActionResult> AddConsumer([FromBody]AddConsumerRequest request)

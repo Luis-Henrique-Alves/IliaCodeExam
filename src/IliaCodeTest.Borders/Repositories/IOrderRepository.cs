@@ -1,6 +1,6 @@
 ﻿using IliaCodeTest.Borders.Dtos;
 using IliaCodeTest.Borders.Models.Pagination;
-using IliaTestExam.Borders.Dtos;
+using IliaCodeTest.Borders.Dtos;
 using System.Threading.Tasks;
 
 namespace IliaCodeTest.Borders.Repositories

@@ -1,9 +1,11 @@
-﻿using IliaTestExam.Borders.Entities;
+﻿using Bogus.Extensions.Brazil;
+using IliaCodeTest.Test.Utils;
+using IliaCodeTest.Borders.Entities;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace IliaTestExam.Test.Entities
+namespace IliaCodeTest.Test.Entities
 {
     public class CustomerTest
     {
@@ -12,11 +14,13 @@ namespace IliaTestExam.Test.Entities
 
         public void Shout_Set_Propeties()
         {
+
             //arrange
+            var faker = FakerPtBr.CreateFaker();
             var  id = Guid.NewGuid();
-            var name = "Teste";
-            var email = "teste@teste.com.br";
-            var mainDocument = "456798132456";
+            var name = faker.Person.FirstName;
+            var email = faker.Person.Email;
+            var mainDocument = faker.Person.Cpf();
             var Orders = new List<Order>();
 
             //Act

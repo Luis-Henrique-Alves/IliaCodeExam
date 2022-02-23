@@ -9,8 +9,8 @@ using Dapper;
 using IliaCodeTest.Repository.Queries;
 using IliaCodeTest.Borders.Repositories;
 using IliaCodeTest.Borders.Models.Pagination;
-using IliaTestExam.Borders.Entities;
-using IliaTestExam.Borders.Dtos;
+using IliaCodeTest.Borders.Entities;
+using IliaCodeTest.Borders.Dtos;
 
 namespace IliaCodeTest.Repository.Repositories
 {

@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[10.3.6, )"
